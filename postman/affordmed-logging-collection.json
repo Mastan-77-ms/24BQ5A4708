@@ -1,0 +1,28 @@
+{
+  "info": {
+    "name": "Affordmed Logging",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Send Log",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Authorization", "value": "Bearer {{token}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"stack\": \"auth-service\", \"level\": \"error\", \"package\": \"affordmed-logging-middleware\", \"message\": \"Failed to connect to DB\"}"
+        },
+        "url": {
+          "raw": "http://4.224.186.213/evaluation-service/logs",
+          "protocol": "http",
+          "host": ["4.224.186.213"],
+          "path": ["evaluation-service", "logs"]
+        }
+      }
+    }
+  ]
+}

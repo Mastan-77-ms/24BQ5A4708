@@ -1,0 +1,14 @@
+{
+  "id": "affordmed-logging-env",
+  "name": "Affordmed Logging Env",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2026-06-05T00:00:00Z",
+  "_postman_exported_using": "Postman"
+}
